@@ -11,47 +11,47 @@ We have already **learned** how to execute a particular **command block more tha
 
 ## Exam Problems
 
-Нека затвърдим знанията си като решим няколко по-сложни задачи с цикли, давани на приемни изпити.
+Let's consolidate our knowledge by solving several more complex loop problems from entrance exams.
 
 
-## Задача: генератор за тъпи пароли
+## Problem: Dumb Passwords Generator
 
-Да се напише програма, която въвежда две цели числа **n** и **l** и генерира по азбучен ред всички възможни **"тъпи” пароли"**, които се състоят от следните **5 символа**:
--	Символ 1: цифра от **1** до **n**.
--	Символ 2: цифра от **1** до **n**.
--	Символ 3: малка буква измежду първите **l** букви на латинската азбука.
--	Символ 4: малка буква измежду първите **l** букви на латинската азбука.
--	Символ 5: цифра от **1** до **n, по-голяма от първите 2 цифри**.
+Write a program that enters two integers **n** and **l** and generates, in alphabetical order, all possible **"dumb” passwords"** that consist of the following **5 characters**:
+-	Character 1: a digit from **1** to **n**.
+-	Character 2: a digit from **1** to **n**.
+-	Character 3: a small letter from the first **l** letters of the Latin alphabet.
+-	Character 4: a small letter from the first **l** letters of the Latin alphabet.
+-	Character 5: a digit from **1** to **n, greater than the first 2 digits**.
 
-### Входни данни
+### Input
 
-Входът се чете от конзолата и се състои от **две цели числа: n** и **l** в интервала [**1 … 9**], по едно на ред.
+The input is read from the console and consists of **two integers: n** and **l** within the range [**1 … 9**], each on a single line.
 
-### Изходни данни
+### Output
 
-На конзолата трябва да се отпечатат **всички "тъпи" пароли по азбучен ред**, разделени с **интервал**.
+Print on the console **all "stupid" passwords in alphabetical order**, separated by **space**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |2<br>4|11aa2 11ab2 11ac2 11ad2 11ba2 11bb2 11bc2 11bd2 11ca2 11cb2 11cc2 11cd2 11da2 11db2 11dc2 11dd2|3<br>1|11aa2 11aa3 12aa3 21aa3 22aa3|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3<br>2|11aa2 11aa3 11ab2 11ab3 11ba2 11ba3 11bb2 11bb3 12aa3 12ab3 12ba3 12bb3 21aa3 21ab3 21ba3 21bb3 22aa3 22ab3 22ba3 22bb3|4<br>2|11aa2 11aa3 11aa4 11ab2 11ab3 11ab4 11ba2 11ba3 11ba4 11bb2 11bb3 11bb4 12aa3 12aa4 12ab3 12ab4 12ba3 12ba4 12bb3 12bb4 13aa4 13ab4 13ba4 13bb4 21aa3 21aa4 21ab3 21ab4 21ba3 21ba4 21bb3 21bb4 22aa3 22aa4 22ab3 22ab4 22ba3 22ba4 22bb3 22bb4 23aa4 23ab4 23ba4 23bb4 31aa4 31ab4 31ba4 31bb4 32aa4 32ab4 32ba4 32bb4 33aa4 33ab4 33ba4 33bb4|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Решението на задачата можем да разделим мислено на три час¬ти:
+We can split the solution into three parts:
 
-* **Прочитане на входните данни** – в настоящата задача това включва прочитането на две числа **`n`** и **`l`**, всяко на отделен ред.
-* **Обработка на входните данни** – използване на вложени цикли за преминаване през всеки възможен символ за всеки от петте символа на паролата.
-* **Извеждане на резултат** – отпечатване на всяка "тъпа" парола, която отговаря на условията.
+* **Read the input** – for the current problem this consists of reading two numbers **`n`** and **`l`**, each on a single line.
+* **Process the input** – use nested loops to iterate through every possible character for each of the five password characters.
+* **Print the result** – print each "dumb" password that meets the requirements.
 
-#### Прочитане и обработка на входните данни
+#### Read and process the input
 
-За **прочитане** на **входните** данни ще декларираме две променливи от целочислен тип **`int`**: **`n`** и **`l`**.
+To **read** the **input** we will declare two integer variables **`int`**: **`n`** and **`l`**.
 
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-01.png)
 
