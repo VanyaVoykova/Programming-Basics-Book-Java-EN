@@ -86,11 +86,11 @@ We have to create **five** nested **`for`** loops, one for each variable. To ens
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#0](https://judge.softuni.bg/Contests/Practice/Index/660#0).
 
 
-## Задача: магически числа
+## Problem: Magic Numbers
 
-Да се напише програма, която въвежда едно цяло **магическо** число и изкарва всички възможни **6-цифрени числа**, за които **произведението на техните цифри е равно на магическото число**.
+Write a program that reads a **magic** integer number and generates all possible **6-digit numbers**, for which **the product of their digits is equal to the magic number**.
 
-Пример: "Магическо число" &rarr; 2
+Example: "Magic number" &rarr; 2
 -	111112 &rarr; 1 \* 1 \* 1 \* 1 \* 1 \* 2 = 2
 -	111121 &rarr; 1 \* 1 \* 1 \* 1 \* 2 \* 1 = 2
 -	111211 &rarr; 1 \* 1 \* 1 \* 2 \* 1 \* 1 = 2
@@ -98,53 +98,53 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#0
 -	121111 &rarr; 1 \* 2 \* 1 \* 1 \* 1 \* 1 = 2
 -	211111 &rarr; 2 \* 1 \* 1 \* 1 \* 1 \* 1 = 2
 
-### Входни данни
+### Input
 
-Входът се чете от конзолата и се състои от **едно цяло число** в интервала [**1 … 600 000**].
+The input is read from the console and consists of **one integer** within the range [**1 … 600 000**].
 
-### Изходни данни
+### Output
 
-На конзолата трябва да се отпечатат **всички магически числа**, разделени с **интервал**.
+Print on the console **all magic numbers**, separated by **space**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2|111112 111121 111211 112111 121111 211111|8|111118 111124 111142 111181 111214 111222 111241 111412 111421 111811 112114 112122 112141 112212 112221 112411 114112 114121 114211 118111 121114 121122 121141 121212 121221 121411 122112 122121 122211 124111 141112 141121 141211 142111 181111 211114 211122 211141 211212 211221 211411 212112 212121 212211 214111 221112 221121 221211 222111 241111 411112 411121 411211 412111 421111 811111|531441|999999|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-**Решението** на задачата за магическите числа следва **същата** концепция (отново трябва да генерираме всички комбинации за n елемента). Следвайки тези стъпки, опитайте да решите задачата сами.
+**The solution** of the magic numbers problem follows **the same** principle (again we have to generate all combinations for a number of elements). Try to solve the problem yourself by following these steps.
 
--	Декларирайте и инициализирайте **променлива** от целочислен тип **`int`** и прочетете **входа** от конзолата.
--	Вложете **шест `for` цикъла** един в друг, по един за всяка цифра на търсените 6-цифрени числа.
--	В последния цикъл, чрез **`if`** конструкция проверете дали **произведението** на шестте цифри е **равно** на **магическото** число.
+-	Declare and initialize a **variable** of type **`int`** and read the **input** from the console.
+-	Nest **six `for` loops** into each other, one for each digit of the required 6-digit numbers.
+-	In the last loop, use an **`if`** construction to check if the **product** of the six digits is **equal** to the **magic** number.
 
 ![](assets/chapter-7-2-images/02.Magic-numbers-01.png)
 
-В предходната глава разгледахме и други циклични конструкции. Нека разгледаме примерно решение на същата задача, в което използваме цикъла **`while`**.
-Първо трябва да запишем **входното магическо число** в подходяща променлива. След това ще инициализираме 6 променливи - по една за всяка от шестте цифри на търсените като **резултат** числа.
+In the previous chapter we reviewed other loop constructions. Let's check a sample solution of the same problem, where we use a **`while`** cycle.
+First, we have to store the **entered magic number** in a suitable variable. After that, we initialize 6 variables - one for each of the six digits of the numbers we have to output as a **result**.
 
 ![](assets/chapter-7-2-images/02.Magic-numbers-02.png)
 
-След това ще започнем да разписваме **`while`** циклите.
-- Ще инициализираме **първата цифра**: **`d1 = 0`**.
-- Ще зададем **условие за всеки** цикъл: цифрата да бъде по-малка или равна на 9.
-- В **началото** на всеки цикъл задаваме стойност на **следващата** цифра, в случая: **`d2 = 0`**. При вложените **`for`** цикли инициализираме променливите във вътрешните цикли при всяко увеличение на външните. Искаме да постигнем същото поведение и тук.
-- В **края** на всеки цикъл ще **увеличаваме** цифрата с едно: **`d++`**.
-- В **най-вътрешния** цикъл ще направим **проверката** и ако е необходимо, ще принтираме на конзолата.
+After that,  we start constructing the **`while`** loops.
+- We initialize the **first digit**: **`d1 = 0`**.
+- We set a **condition for each** loop: the digit has to be lower or equal to 9.
+- At the **start** of each loop we set the value of the **next** digit, in this case: **`d2 = 0`**. In the nested **`for`** loops we initialize the variables in the inner loops with each incrementation of the outer loops. We want to achieve the same behaviour here as well.
+- At the **end** of each loop we **increase** the digit by one: **`d++`**.
+- In the **innermost** loop we do the **check** and, if necessary, print on the console.
 
 ![](assets/chapter-7-2-images/02.Magic-numbers-03.png)
 
-Нека премахнем **`if`** проверката от най-вътрешния цикъл. Сега, нека инициализираме всяка променлива извън циклите и нека изтрием редовете **`dx = 0`**. След като стартираме програмата, получаваме само 10 резултата. Защо? А ако използвате **`do-while`** цикъл? В случая този цикъл не изглежда подходящ, нали? Помислете защо. Разбира се, можете да решите задачата и с помощта на **безкраен цикъл**.
+Let's remove the **`if`** check from the innermost loop. Now, let's initialize each variable outside the loops and delete the lines **`dx = 0`**. After we start the program, we get only 10 results. Why? And what if we use a **`do-while`** loop? In our case this loop doesn't seem suitable, does it? Think about why. Of course, you can also solve the problem by using an **endless loop**.
 
 ![](assets/chapter-7-2-images/02.Magic-numbers-04.png)
 
-Както виждаме, един проблем можем да решим с различни видове цикли. Разбира се, за всяка задача има най-подходящ избор. С цел да упражните всеки цикъл - опитайте се да решите всяка от следващите задачи с всички изучени цикли.
+As we can see, we can solve the same problem by using different types of loops. Of course, there is a most suitable choice for each problem. In order to practice each type of loop, try to solve each of the following problems by using every type of loop we've studied so far.
 
-### Тестване в Judge системата
+### Test in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/660#1](https://judge.softuni.bg/Contests/Practice/Index/660#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#1](https://judge.softuni.bg/Contests/Practice/Index/660#1).
 
 
 ## Задача: спиращо число
