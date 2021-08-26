@@ -14,9 +14,9 @@ We have already **learned** how to execute a particular **command block more tha
 Let's consolidate our knowledge by solving several more complex loop problems from entrance exams.
 
 
-## Problem: Dumb Passwords Generator
+## Problem: Stupid Passwords Generator
 
-Write a program that enters two integers **n** and **l** and generates, in alphabetical order, all possible **"dumb” passwords"** that consist of the following **5 characters**:
+Write a program that enters two integers **n** and **l** and generates, in alphabetical order, all possible **"stupid” passwords"** that consist of the following **5 characters**:
 -	Character 1: a digit from **1** to **n**.
 -	Character 2: a digit from **1** to **n**.
 -	Character 3: a small letter from the first **l** letters of the Latin alphabet.
@@ -47,43 +47,43 @@ We can split the solution into three parts:
 
 * **Read the input** – for the current problem this consists of reading two numbers **`n`** and **`l`**, each on a single line.
 * **Process the input** – use nested loops to iterate through every possible character for each of the five password characters.
-* **Print the result** – print each "dumb" password that meets the requirements.
+* **Print the result** – print each "stupid" password that meets the requirements.
 
-#### Read and process the input
+#### Read the Input
 
 To **read** the **input** we will declare two integer variables **`int`**: **`n`** and **`l`**.
 
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-01.png)
 
-Нека декларираме и инициализираме **променливите**, които ще **съхраняват символите** на паролата: за **цифровите** символи - от тип **`int`** -  **`d1`**, **`d2`**, **`d3`**, a за **буквените** - от тип  **`char`** - **`l1`**, **`l2`**.
+Let's declare and initialize the **variables**, which will **store the characters** of the password: for the **numeric** characters - **`int`** -  **`d1`**, **`d2`**, **`d3`**, and for the **letters** - **`char`** - **`l1`**, **`l2`**.
 
-#### Извеждане на резултат
+#### Process the Input and Print the Output
 
-Необходимо е да вложим **пет** **`for`** цикъла един в друг, по един за всяка променлива. За да гарантираме условието последната цифра **d3** да бъде **по-голяма** от първите две, ще използваме вградената функция **`Math.max(…)`**. 
+We have to create **five** nested **`for`** loops, one for each variable. To ensure that the last digit **d3** is **greater** than the first two, we will use the built-in function **`Math.max(…)`**. 
 
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-02.png)
 
-**Знаете ли, че…?** 
+**Did you Know That…?** 
 
-* Можем да **дефинираме `for`** цикъл с променлива от тип **`char`**:
+* We can **define a `for`** loop with a variable of type **`char`**:
 
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-03.png)
 
-* Можем да **прочетем** променлива от тип **`char`** от конзолата със следната конструкция:
+* We can **read** a variable of type **`char`** from the console by using the following structure:
 
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-04.png)
     
-* Можем да обърнем **главен** символ **към малък**, използвайки вградена функция в Java:
+* We can convert an **uppercase** character **to lowercase** by using the built-in function in Java:
     
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-05.png)
     
-* При прочит на символи от конзолата, директно можем да преобразуваме главни към малки букви, **обединявайки горните два реда**:
+* When reading characters from the console, we can directly convert uppercase letters to lowercase letters **by combining the two lines above**:
 
 ![](assets/chapter-7-2-images/01.Stupid-password-generator-06.png)
 
-### Тестване в Judge системата
+### Test your code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/660#0](https://judge.softuni.bg/Contests/Practice/Index/660#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#0](https://judge.softuni.bg/Contests/Practice/Index/660#0).
 
 
 ## Задача: магически числа
