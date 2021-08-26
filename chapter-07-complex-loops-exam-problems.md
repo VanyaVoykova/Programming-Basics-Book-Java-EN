@@ -86,7 +86,7 @@ We have to create **five** nested **`for`** loops, one for each variable. To ens
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#0](https://judge.softuni.bg/Contests/Practice/Index/660#0).
 
 
-## Problem: Magic Numbers
+## Problem: Magic Combination
 
 Write a program that reads a **magic** integer number and generates all possible **6-digit numbers**, for which **the product of their digits is equal to the magic number**.
 
@@ -140,7 +140,7 @@ Let's remove the **`if`** check from the innermost loop. Now, let's initialize e
 
 ![](assets/chapter-7-2-images/02.Magic-numbers-04.png)
 
-As we can see, we can solve the same problem by using different types of loops. Of course, there is a most suitable choice for each problem. In order to practice each type of loop, try to solve each of the following problems by using every type of loop we've studied so far.
+As we can see, we can solve the same problem by using different types of loops. Of course, there is a most suitable choice for each problem. In order to practice each type of loop, try to solve each of the following problems by using every type of loop we've learned so far.
 
 ### Test in the Judge System
 
