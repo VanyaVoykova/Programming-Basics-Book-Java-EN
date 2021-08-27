@@ -201,7 +201,7 @@ Accordingly, if the **condition** that checks whether the number is equal to the
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#2](https://judge.softuni.bg/Contests/Practice/Index/660#2).
 
 
-## Задача: специални числа
+## Problem: Special Numbers
 
 Да се напише програма, която **въвежда едно цяло число N** и генерира всички възможни **"специални" числа** от **1111** до **9999**. За да бъде **"специалнo"** едно число, то трябва да отговаря на **следното условие**:
 - **N да се дели на всяка една от неговите цифри без остатък.**
