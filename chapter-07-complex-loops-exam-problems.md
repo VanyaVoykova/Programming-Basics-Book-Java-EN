@@ -170,7 +170,7 @@ Print on the console, on a single line, all numbers that meet the condition, sep
 
 |Input|Output|Comments|
 |---|---|---|
-|1<br>36<br>12|36 30 24 18|The numbers from 36 to 1, that are divisible by both 2 and 3 without reminder are: 36, 30, 24, 18, 12 and 6. The number 12 **is equal** to the stop number, so we **stop at 18**.|
+|1<br>36<br>12|36 30 24 18|The numbers from 36 to 1 that are divisible by both 2 and 3 without reminder are: 36, 30, 24, 18, 12 and 6. The number 12 **is equal** to the stop number, so we **stop at 18**.|
 
 |Input|Output|
 |---|---|
