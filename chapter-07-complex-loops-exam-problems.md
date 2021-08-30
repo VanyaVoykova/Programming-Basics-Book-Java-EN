@@ -190,7 +190,7 @@ We're also familiar with the **second** part - the initialization of a **`for`**
 
 ![](assets/chapter-7-2-images/04.Stop-number-01.png)
 
-After we have initialized the **`for`** loop, it is time for the **third** part of the problem - to **check** the condition if the given **number is divisible by both 2 and 3 without remainder**. We will do this by using one simple **`if`** condition, that we will let the reader construct themselves.
+After we have initialized the **`for`** loop, it is time for the **third** part of the problem - to **check** the condition if the given **number is divisible by both 2 and 3 without a remainder**. We will do this by using one simple **`if`** condition, that we will let the reader construct themselves.
 
 The other **tricky** part in this problem is that, apart from the check above, we need an **additional** one - if the **number is equal to the "stop" number** entered from the console on the third line. To reach this check, the number we're checking has to pass the check above. That's why we add one more **`if`** statement **nested in the previous one**. If the condition is **true**, we have to stop printing. We can achieve this with the **`break`** operator which will lead us **out** of the **`for`** loop.
  
@@ -204,13 +204,13 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#2
 ## Problem: Special Numbers
 
 Write a program that **reads an integer N** and generates all possible **"special" numbers** from **1111** to **9999**. To be considered **"special"**, a number must satisfy the **following condition**:
-- **N must be divisible by each of its digits without remainder.**
+- **N must be divisible by each of its digits without a remainder.**
 
 **Example:** if **N = 16, 2418** is a special number:
-- 16 / 2 = 8 **without remainder**
-- 16 / 4 = 4 **without remainder**
-- 16 / 1 = 16 **without remainder**
-- 16 / 8 = 2 **without remainder**
+- 16 / 2 = 8 **without a remainder**
+- 16 / 4 = 4 **without a remainder**
+- 16 / 1 = 16 **without a remainder**
+- 16 / 8 = 2 **without a remainder**
 
 ### Input
 
@@ -224,7 +224,7 @@ Print on the console **all special numbers**, separated by **space**.
 
 |Input|Output|Comments|
 |---|---|---|
-|3|1111 1113 1131 1133 1311 1313 1331 1333 3111 3113 3131 3133 3311 3313 3331 3333|3 / 1 = 3 without remainder<br>3 / 3 = 1 without remainder<br>3 / 3 = 1 without remainder<br>3 / 3 = 1 without remainder|
+|3|1111 1113 1131 1133 1311 1313 1331 1333 3111 3113 3131 3133 3311 3313 3331 3333|3 / 1 = 3 without a remainder<br>3 / 3 = 1 without a remainder<br>3 / 3 = 1 without a remainder<br>3 / 3 = 1 without a remainder|
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -242,8 +242,8 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#3
 ## Problem: Digits
 
 Write a program that reads from the console 1 integer within the range [**100 … 999**], and then prints it a predefined number of times - modifying it before each print, as follows:
-- If the number is divisible by **5** without remainder, **subtract** from it **its first digit**.
-- If the number is divisible by **3** without remainder, **subtract** from it **its second digit**.
+- If the number is divisible by **5** without a remainder, **subtract** from it **its first digit**.
+- If the number is divisible by **3** without a remainder, **subtract** from it **its second digit**.
 - If none of the conditions above is true, **add** to it **its third digit**.
 
 Print on the console **N lines**, each containing **M numbers** that are the result of the actions above, where:
