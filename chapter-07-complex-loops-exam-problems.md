@@ -149,7 +149,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#1
 
 ## Problem: Stop Number
 
-Write a program that prints on the console all numbers from **N** to **M**, that are **divisible by 2** and **3 without remainder**, in **reversed order**. We will read from the console **one** additional "stop" number **S**. If any of the numbers divisible by 2 and 3 **is equal to the stop number, it should not be printed** and the program should end. **Otherwise print all numbers up to N** that meet the condition.
+Write a program that prints on the console all numbers from **N** to **M** that are **divisible by 2** and **3 without remainder**, in **reversed order**. We will read from the console **one** additional "stop" number **S**. If any of the numbers divisible by 2 and 3 **is equal to the stop number, it should not be printed** and the program should end. **Otherwise print all numbers up to N** that meet the condition.
 
 ### Input
 
