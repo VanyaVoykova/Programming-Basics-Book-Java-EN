@@ -1,6 +1,6 @@
 # Chapter 7.2. Complex Loops – Exam Problems
 
-We have already **learned** how to execute a particular **command block more than once** by using a **`for`** loop. In the previous chapter we **reviewed** several other **loop constructions**, which could help us to solve more complex problems:
+We have already **learned** how to execute a particular **command block more than once** by using a **`for`** loop. In the previous chapter we **reviewed** several other **loop constructions**, which could help us solve more complex problems:
 - **loops with a step**
 - **nested** loops
 - **`while`** loops
