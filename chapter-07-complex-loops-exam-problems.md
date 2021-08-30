@@ -241,7 +241,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#3
 
 ## Problem: Digits
 
-Write a program that reads from the console 1 integer within the range [**100 … 999**], and then prints it a predefined number of times - modifying it before each print, as follows:
+Write a program that reads from the console 1 integer within the range [**100 … 999**], and then prints it a predefined number of times — modifying it before each print, as follows:
 - If the number is divisible by **5** without remainder, **subtract** from it **its first digit**.
 - If the number is divisible by **3** without remainder, **subtract** from it **its second digit**.
 - If none of the conditions above is true, **add** to it **its third digit**.
