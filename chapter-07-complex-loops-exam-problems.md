@@ -274,4 +274,4 @@ Solve the problem **on your own**, using what you have learned from the previous
 
 ### Test in the Judge System
 
-est your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#4](https://judge.softuni.bg/Contests/Practice/Index/660#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/660#4](https://judge.softuni.bg/Contests/Practice/Index/660#4).
