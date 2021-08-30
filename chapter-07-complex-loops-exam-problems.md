@@ -252,9 +252,9 @@ Print on the console **N lines**, each containing **M numbers** that are the res
 
 ### Input
 
-The input is read from the **конзолата** and is an integer within the range [**100 … 999**].
+The input is read from the **console** and is an integer within the range [**100 … 999**].
 
-### Изходни данни
+### Output
 
 Print on the console **all integers** that are the result of the calculations above in the respective number of rows and columns as in the examples.
 
