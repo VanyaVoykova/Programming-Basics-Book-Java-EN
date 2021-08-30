@@ -129,7 +129,7 @@ First, we have to store the **entered magic number** in a suitable variable. Aft
 
 After that,  we start constructing the **`while`** loops.
 - We initialize the **first digit**: **`d1 = 0`**.
-- We set a **condition for each** loop: the digit has to be lower or equal to 9.
+- We set a **condition for each** loop: the digit has to be lower than or equal to 9.
 - At the **start** of each loop we set the value of the **next** digit, in this case: **`d2 = 0`**. In the nested **`for`** loops we initialize the variables in the inner loops with each incrementation of the outer loops. We want to achieve the same behaviour here as well.
 - At the **end** of each loop we **increase** the digit by one: **`d++`**.
 - In the **innermost** loop we do the **check** and, if necessary, print on the console.
